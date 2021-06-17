@@ -1,0 +1,444 @@
+{
+	"info": {
+		"_postman_id": "14450ac8-ff4c-4320-9c60-b1b9f2e32f1b",
+		"name": "Hms_documentation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:35163/api/doctors/getall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:35163/api/doctors/getall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "35163",
+					"path": [
+						"api",
+						"doctors",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:35163/api/patients/getall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:35163/api/patients/getall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "35163",
+					"path": [
+						"api",
+						"patients",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:35163/api/appointments/getall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:35163/api/appointments/getall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "35163",
+					"path": [
+						"api",
+						"appointments",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:35163/api/appointments/getappointmentdetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:35163/api/appointments/getappointmentdetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "35163",
+					"path": [
+						"api",
+						"appointments",
+						"getappointmentdetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:35163/api/patients/getbyid?id=1002",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:35163/api/patients/getbyid?id=1002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "35163",
+					"path": [
+						"api",
+						"patients",
+						"getbyid"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:35163/api/doctors/getbyid?id=6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:35163/api/doctors/getbyid?id=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "35163",
+					"path": [
+						"api",
+						"doctors",
+						"getbyid"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:35163/api/appointments/getbyid?id=6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:35163/api/appointments/getbyid?id=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "35163",
+					"path": [
+						"api",
+						"appointments",
+						"getbyid"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:35163/api/appointments/delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":6,\r\n    \"patientId\":1002,\r\n    \"doctorId\":10,\r\n    \"appointmentDate\":\"2021-06-16T10:15:00\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:35163/api/appointments/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "35163",
+					"path": [
+						"api",
+						"appointments",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:35163/api/appointments/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patientId\":1002,\r\n    \"doctorId\":10,\r\n    \"appointmentDate\":\"2021-06-16T10:15:00\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:35163/api/appointments/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "35163",
+					"path": [
+						"api",
+						"appointments",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:35163/api/appointments/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1003,\r\n    \"patientId\":1002,\r\n    \"doctorId\":10,\r\n    \"appointmentDate\":\"2021-06-25T10:15:00\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:35163/api/appointments/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "35163",
+					"path": [
+						"api",
+						"appointments",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:35163/api/patients/delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2,\r\n    \"tc_no\":\"12345678984\",\r\n    \"firstName\":\"Sevde Nur\",\r\n    \"lastName\":\"Demirel\"}\r\n\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:35163/api/patients/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "35163",
+					"path": [
+						"api",
+						"patients",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:35163/api/patients/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tc_no\":\"12345678984\",\r\n    \"firstName\":\"Ali\",\r\n    \"lastName\":\"Demirci\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:35163/api/patients/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "35163",
+					"path": [
+						"api",
+						"patients",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:35163/api/patients/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":4002,\r\n    \"tc_no\":\"12345670254\",\r\n    \"firstName\":\"Ali\",\r\n    \"lastName\":\"Demirci\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:35163/api/patients/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "35163",
+					"path": [
+						"api",
+						"patients",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:35163/api/doctors/delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\":8004,\r\n        \"firstName\":\"Ahmet\",\r\n        \"lastName\":\"Baran\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:35163/api/doctors/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "35163",
+					"path": [
+						"api",
+						"doctors",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:35163/api/doctors/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\":\"İlker\",\r\n        \"lastName\":\"Baran\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:35163/api/doctors/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "35163",
+					"path": [
+						"api",
+						"doctors",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:35163/api/doctors/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":9004,\r\n    \"firstName\":\"Ilker\",\r\n    \"lastName\":\"Baranoğlu\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:35163/api/doctors/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "35163",
+					"path": [
+						"api",
+						"doctors",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
