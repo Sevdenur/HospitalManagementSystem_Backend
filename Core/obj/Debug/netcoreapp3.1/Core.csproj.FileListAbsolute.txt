@@ -1,0 +1,9 @@
+C:\Users\ASUS\source\repos\HospitalAppointmentSystem\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+C:\Users\ASUS\source\repos\HospitalAppointmentSystem\Core\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\ASUS\source\repos\HospitalAppointmentSystem\Core\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\ASUS\source\repos\HospitalAppointmentSystem\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\HospitalAppointmentSystem\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+C:\Users\ASUS\source\repos\HospitalAppointmentSystem\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+C:\Users\ASUS\source\repos\HospitalAppointmentSystem\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\HospitalAppointmentSystem\Core\obj\Debug\netcoreapp3.1\Core.dll
+C:\Users\ASUS\source\repos\HospitalAppointmentSystem\Core\obj\Debug\netcoreapp3.1\Core.pdb
